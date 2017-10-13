@@ -1,2 +1,2 @@
 # transmission-rpc
-WebExtension addon for Mozilla Firefox to work with Transsmision
+WebExtension addon for Mozilla Firefox to work with Transmission
