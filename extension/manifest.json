@@ -1,0 +1,48 @@
+{
+
+  "manifest_version": 2,
+  "name": "Transmission-RPC",
+  "version": "1.0",
+
+  "description": "WebExtension addon for Mozilla Firefox to work with Transmission",
+  "homepage_url": "https://github.com/daviddelamo/transmission-rpc",
+  "icons": {
+    "48": "icons/transmission-48x48.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "contextMenus"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/transmission-48x48.png",
+    "default_title": "Transmission",
+    "default_popup": "popup/status.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "settings-example@mozilla.org"
+    }
+  },
+
+  "web_accessible_resources": [
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "background": {
+          "scripts": [
+              "background.js",
+              "rpc/transmission.js",
+              "base64js.min.js",
+              "encodings.js",
+              "encoding-indexes.js",
+              "textencoder-lite.min.js"
+          ]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
