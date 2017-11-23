@@ -24,11 +24,12 @@
 
   "applications": {
     "gecko": {
-      "id": "settings-example@mozilla.org"
+      "id": "{888139ea-8258-418f-b5d4-1b98f689dae2}"
     }
   },
 
   "web_accessible_resources": [
+    "images/progress.png"
   ],
 
   "options_ui": {

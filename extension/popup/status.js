@@ -36,8 +36,7 @@ function buildTorrentDetail(torrent, selector, even){
   divTorrentProgressComplete.classList.add('torrent_progress_bar');
   divTorrentProgressComplete.classList.add('complete');
   divTorrentProgressComplete.classList.add(torrentStatus);
-  divTorrentProgressComplete.style = 'width: '+(torrent.percentDone*100)+'%; display: block';
-
+  divTorrentProgressComplete.style = 'width: '+cleanDecimals(Number(torrent.percentDone)*100)+'%; display: block';
   var divTorrentProgressIncomplete = document.createElement("DIV");
   divTorrentProgressIncomplete.classList.add('torrent_progress_bar')
   divTorrentProgressIncomplete.classList.add('incomplete');

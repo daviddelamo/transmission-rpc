@@ -76,6 +76,7 @@ console.log("sending: "+torrent_add);
 
   xhttp.send(torrent_add);
   xhttp.onreadystatechange = function() {
+    console.log(this.responseText);
     if (this.readyState == 4 && this.status == 409){
       xTransmissionSessionId = this.getResponseHeader("X-Transmission-Session-Id");
       addTorrent(url);

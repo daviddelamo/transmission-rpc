@@ -123,7 +123,7 @@ ul.torrent_list {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-image: url("images/progress.png");
+    background-image: url("../images/progress.png");
     background-repeat: repeat-x;
     border: 1px solid #888; }
     ul.torrent_list div.torrent_progress_bar.complete {
